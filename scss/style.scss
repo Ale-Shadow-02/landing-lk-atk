@@ -1,1 +1,68 @@
 @import "reset";
+//Общие стили для проекта
+body {
+   font-family: Roboto, sans-serif;
+}
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #016b45;
+   border-radius: 10px;
+   color: #ffffff;
+   font-size: 20px;
+   line-height: 1.5;
+   text-transform: uppercase;
+   transition: all 0.3s;
+   &:hover {
+      background-color: darken(#016b45, 10%);
+      transition: all 0.3s;
+   }
+}
+
+.btn.black {
+   background-color: #000000;
+   border-radius: 6px;
+   transition: all 0.3s;
+   &:hover {
+      background-color: lighten(#000000, 40%);
+      transition: all 0.3s;
+   }
+}
+
+.section__num {
+   font-weight: 700;
+   font-size: 400px;
+   color: rgba(0, 0, 0, 0.1);
+}
+
+.section__title {
+   font-weight: 700;
+   font-size: 54px;
+   line-height: 1.5;
+   color: #000000;
+}
+
+.section__title._sub-descr {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.5;
+   text-transform: uppercase;
+   color: #016b45;
+}
+
+.num-section__title {
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 1.5;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+.num-section__title._subtitle {
+   text-transform: capitalize;
+}
