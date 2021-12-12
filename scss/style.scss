@@ -8,6 +8,11 @@ body {
    margin: 0 auto;
 }
 
+.container {
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
 .btn {
    display: inline-block;
    padding: 10px 20px;
@@ -66,3 +71,5 @@ body {
 .num-section__title._subtitle {
    text-transform: capitalize;
 }
+
+@import "header";
