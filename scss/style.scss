@@ -3,14 +3,21 @@
 body {
    font-family: Roboto, sans-serif;
 }
+
+body._lock {
+   overflow: hidden;
+}
+
 .wrapper {
    max-width: 1920px;
+   min-height: 100%;
    margin: 0 auto;
 }
 
 .container {
    max-width: 1320px;
    margin: 0 auto;
+   padding: 0 10px;
 }
 
 .btn {
