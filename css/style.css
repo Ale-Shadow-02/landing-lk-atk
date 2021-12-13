@@ -293,6 +293,10 @@ body._lock {
   display: block;
 }
 
+details {
+  display: none;
+}
+
 /* ----------------------- */
 @media (min-width: 992px) {
   .menu__list {
@@ -313,6 +317,9 @@ body._lock {
   .menu__body--btn,
   .menu__list.tabs {
     display: none;
+  }
+  details {
+    display: block;
   }
   summary::marker {
     color: #fff;
