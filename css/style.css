@@ -91,6 +91,7 @@ h6 {
 /**Обнуление стилей*/
 body {
   font-family: Roboto, sans-serif;
+  background: #ffffff;
 }
 
 body._lock {
@@ -116,6 +117,7 @@ body._lock {
   border-radius: 10px;
   color: #ffffff;
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.5;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
@@ -139,6 +141,19 @@ body._lock {
   background-color: #666666;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.btn.modal {
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #016b45;
+  border-radius: 7px;
+}
+
+.btn.modal:hover {
+  background-color: #016b45;
+  color: #ffffff;
 }
 
 .section__num {
@@ -180,7 +195,7 @@ body._lock {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #912105;
+  background-color: #ffffff;
 }
 
 .header__container {
@@ -198,12 +213,11 @@ body._lock {
 }
 
 .header__logo {
-  border-radius: 50%;
   background-color: #fff;
   position: relative;
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 32px;
 }
 
 .menu__icon {
@@ -212,7 +226,8 @@ body._lock {
 
 .menu__list > li {
   position: relative;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 40px;
+  cursor: pointer;
 }
 
 .menu__link {
@@ -281,8 +296,21 @@ body._touch .menu__list > li._active .menu__sub-list {
 body._touch .menu__list > li._active .menu__arrow {
 	transform: rotate(-180deg);
 }*/
+.tabs__body {
+  background-color: #1b242d;
+  min-height: 70px;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content.active {
+  display: block;
+}
+
 /* ----------------------- */
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +331,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	}*/
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .menu__icon {
     z-index: 5;
     display: block;

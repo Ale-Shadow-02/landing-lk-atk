@@ -2,6 +2,7 @@
 //Общие стили для проекта
 body {
    font-family: Roboto, sans-serif;
+   background: #ffffff;
 }
 
 body._lock {
@@ -27,6 +28,7 @@ body._lock {
    border-radius: 10px;
    color: #ffffff;
    font-size: 20px;
+   font-weight: 500;
    line-height: 1.5;
    text-transform: uppercase;
    transition: all 0.3s;
@@ -43,6 +45,18 @@ body._lock {
    &:hover {
       background-color: lighten(#000000, 40%);
       transition: all 0.3s;
+   }
+}
+
+.btn.modal {
+   background-color: #ffffff;
+   font-size: 14px;
+   color: #000000;
+   border: 1px solid #016b45;
+   border-radius: 7px;
+   &:hover {
+      background-color: #016b45;
+      color: #ffffff;
    }
 }
 

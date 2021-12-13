@@ -9,6 +9,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <title>Личный кабинет АЛВЕ Транскарго</title>
 </head>
 
@@ -16,17 +17,47 @@
    <div class="wrapper">
       <header class="header" id="header">
          <div class="container header__container">
-            <a href="/index.html" class="header__logo"></a>
+            <a href="/index.html" class="header__logo">
+               <img src="/images/logo.svg" alt="LOGO">
+            </a>
             <div class="header__menu menu">
                <div class="menu__icon">
                   <span class="burger"></span>
                </div>
                <nav class="menu__body">
-                  <ul class="menu__list">
-                     <li><a href="#" class="menu__link">Text#1</a></li>
-                     <li><a href="#" class="menu__link">Text#2</a></li>
+                  <ul class="menu__list tabs">
+                     <li class="active">Веб версия личного кабинета в браузере</li>
+                     <li>Личный кабинет в 1С</li>
+                     <li><a href="#" class="btn modal">Заказать обратный звонок</a></li>
                   </ul>
                </nav>
+            </div>
+         </div>
+         <div class="tabs__body">
+            <div class="container">
+               <div class="tabs__content active" id="content-1">
+                  <ul class="menu__list">
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Test1</a></li>
+                  </ul>
+               </div>
+               <div class="tabs__content" id="content-2">
+                  <ul class="menu__list">
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Test2</a></li>
+                  </ul>
+               </div>
             </div>
          </div>
       </header>
