@@ -18,7 +18,7 @@
       <header class="header" id="header">
          <div class="container header__container">
             <a href="/index.html" class="header__logo">
-               <img src="/images/logo.svg" alt="LOGO">
+               <img src="images/logo.svg" alt="LOGO">
             </a>
             <div class="header__menu menu">
                <div class="menu__icon">
@@ -26,37 +26,68 @@
                </div>
                <nav class="menu__body">
                   <ul class="menu__list tabs">
-                     <li class="active">Веб версия личного кабинета в браузере</li>
-                     <li>Личный кабинет в 1С</li>
-                     <li><a href="#" class="btn modal">Заказать обратный звонок</a></li>
+                     <li class="tab__btn tab__btn--active" data-tabs-path="main">Веб версия личного кабинета в
+                        браузере<br><span class="tab__btn--subtitle">онлайн кабинет для перевозчиков и заказчиков</span>
+                     </li>
+                     <li class="tab__btn" data-tabs-path="archive">Личный кабинет в 1С<br><span
+                           class="tab__btn--subtitle">документооборот и нтеграция с 1С</span></li>
                   </ul>
+                  <details>
+                     <summary>Веб версия личного кабинета в браузере<br><span class="tab__btn--subtitle">онлайн кабинет
+                           для перевозчиков и заказчиков</span></summary>
+                     <ul class="menu__list mobile">
+                        <li><a href="#" class="menu__link">Преимущества ЛК в браузере</a></li>
+                        <li><a href="#" class="menu__link">Мои заявки/Мои перевозки</a></li>
+                        <li><a href="#" class="menu__link">Мой парк</a></li>
+                        <li><a href="#" class="menu__link">Мои финансы</a></li>
+                        <li><a href="#" class="menu__link">Найти новую заявку/Подать заявку</a></li>
+                        <li><a href="#" class="menu__link">Мои агенты/Мои представители</a></li>
+                        <li><a href="#" class="menu__link">Настройки профиля</a></li>
+                     </ul>
+                  </details>
+                  <details>
+                     <summary>Личный кабинет в 1С<br><span class="tab__btn--subtitle">документооборот и нтеграция с
+                           1С</span></summary>
+                     <ul class="menu__list mobile">
+                        <li><a href="#" class="menu__link">Учет и контроль перевозок</a></li>
+                        <li><a href="#" class="menu__link">Учет железнодорожного транспорта</a></li>
+                        <li><a href="#" class="menu__link">Бухгалтерский учет</a></li>
+                        <li><a href="#" class="menu__link">Фмнансовый учет</a></li>
+                        <li><a href="#" class="menu__link">CRM система</a></li>
+                        <li><a href="#" class="menu__link">Интеграция. Возможность обмена типовыми конфигурациями</a>
+                        </li>
+                     </ul>
+                  </details>
                </nav>
+            </div>
+            <div class="menu__body--btn">
+               <a href="#" class="btn modal">Заказать обратный звонок</a>
             </div>
          </div>
          <div class="tabs__body">
             <div class="container">
-               <div class="tabs__content active" id="content-1">
+               <div class="tabs__content tabs__content--active" id="content-1" data-tabs-target="main">
                   <ul class="menu__list">
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
-                     <li><a href="#" class="menu__link">Test1</a></li>
+                     <li><a href="#" class="menu__link">Преимущества ЛК в браузере</a></li>
+                     <li><a href="#" class="menu__link">Мои заявки/Мои перевозки</a></li>
+                     <li><a href="#" class="menu__link">Мой парк</a></li>
+                     <li><a href="#" class="menu__link">Мои финансы</a></li>
+                     <li><a href="#" class="menu__link">Найти новую заявку/Подать заявку</a></li>
+                     <li><a href="#" class="menu__link">Мои агенты/Мои представители</a></li>
+                     <li><a href="#" class="menu__link">Настройки профиля</a></li>
                   </ul>
+                  <div class="tabs__triangle--1"></div>
                </div>
-               <div class="tabs__content" id="content-2">
+               <div class="tabs__content" id="content-2" data-tabs-target="archive">
                   <ul class="menu__list">
-                     <li><a href="#" class="menu__link">Test2</a></li>
-                     <li><a href="#" class="menu__link">Test2</a></li>
-                     <li><a href="#" class="menu__link">Test2</a></li>
-                     <li><a href="#" class="menu__link">Test2</a></li>
-                     <li><a href="#" class="menu__link">Test2</a></li>
-                     <li><a href="#" class="menu__link">Test2</a></li>
-                     <li><a href="#" class="menu__link">Test2</a></li>
+                     <li><a href="#" class="menu__link">Учет и контроль перевозок</a></li>
+                     <li><a href="#" class="menu__link">Учет железнодорожного транспорта</a></li>
+                     <li><a href="#" class="menu__link">Бухгалтерский учет</a></li>
+                     <li><a href="#" class="menu__link">Фмнансовый учет</a></li>
+                     <li><a href="#" class="menu__link">CRM система</a></li>
+                     <li><a href="#" class="menu__link">Интеграция. Возможность обмена типовыми конфигурациями</a></li>
                   </ul>
+                  <div class="tabs__triangle--2"></div>
                </div>
             </div>
          </div>
