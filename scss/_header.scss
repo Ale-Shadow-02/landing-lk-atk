@@ -19,15 +19,8 @@
    width: 100px;
    height: 32px;
 }
-.header__menu {
-}
-.menu {
-}
-
 .menu__icon {
    display: none;
-}
-.menu__body {
 }
 .menu__list {
    display: flex;
@@ -51,21 +44,18 @@
 .menu__link:hover {
    text-decoration: underline;
 }
-
 .tabs__body {
    background-color: #1b242d;
    min-height: 70px;
 }
-
 .tabs__content {
    display: none;
    position: relative;
 }
-
 .tabs__triangle--1 {
    position: absolute;
    top: -10px;
-   left: 300px;
+   left: 24%;
    width: 0;
    height: 0;
    border-left: 30px solid transparent;
@@ -75,21 +65,19 @@
 .tabs__triangle--2 {
    position: absolute;
    top: -10px;
-   left: 680px;
+   left: 51%;
    width: 0;
    height: 0;
    border-left: 30px solid transparent;
    border-right: 30px solid transparent;
    border-bottom: 10px solid #1b242d;
 }
-
 .menu__list > li.tab__btn--active {
    color: #016b45;
 }
 .tabs__content--active {
    display: block;
 }
-
 details {
    display: none;
 }
