@@ -654,27 +654,27 @@ details {
 }
 
 .content__item.item-1 {
-  background: url("/images/sec2/box_1.jpg") 50% 50%/cover no-repeat;
+  background: url("../images/sec2/box_1.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-2 {
-  background: url("/images/sec2/box_2.jpg") 50% 50%/cover no-repeat;
+  background: url("../images/sec2/box_2.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-3 {
-  background: url("/images/sec2/box_3.jpg") 50% 50%/cover no-repeat;
+  background: url("../images/sec2/box_3.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-4 {
-  background: url("/images/sec2/box_4.jpg") 50% 50%/cover no-repeat;
+  background: url("../images/sec2/box_4.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-5 {
-  background: url("/images/sec2/box_5.jpg") 50% 50%/cover no-repeat;
+  background: url("../images/sec2/box_5.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-6 {
-  background: url("/images/sec2/box_6.jpg") 50% 50%/cover no-repeat;
+  background: url("../images/sec2/box_6.jpg") 50% 50%/cover no-repeat;
 }
 
 .item__img {
