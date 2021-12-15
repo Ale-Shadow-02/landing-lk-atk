@@ -1,5 +1,5 @@
 .lk-browser {
-   margin: 200px 0 0 0;
+   padding: 120px 0px 0px 0px;
    &__title {
       text-align: center;
       line-height: 1;
@@ -74,14 +74,17 @@
 }
 
 @media (max-width: 576px) {
+   .lk-browser {
+      padding: 150px 0px 0px 0px;
+      &__title {
+         font-size: 30px;
+      }
+      &__subtitle {
+         font-size: 18px;
+         margin: 0 0 20px 0;
+      }
+   }
    .content__item {
       flex: 0 1 100%;
-   }
-   .lk-browser__title {
-      font-size: 30px;
-   }
-   .lk-browser__subtitle {
-      font-size: 18px;
-      margin: 0 0 20px 0;
    }
 }

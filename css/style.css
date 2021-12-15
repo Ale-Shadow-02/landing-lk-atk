@@ -105,6 +105,7 @@ body._lock {
 }
 
 .container {
+  position: relative;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 10px;
@@ -456,8 +457,167 @@ details {
   }
 }
 
+.offer {
+  background: url("/images/sec1/banner.jpg") 0 0/contain no-repeat;
+  height: 38vw;
+  margin: 140px 0px 0px 0px;
+  padding: 4vw 0px 0px 0px;
+}
+
+.offer__container {
+  height: 100%;
+}
+
+.offer__subtitle {
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff80;
+  margin: 0px 0px 20px 0px;
+}
+
+.offer__title {
+  max-width: 500px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+}
+
+.offer__descr {
+  display: inline-block;
+  max-width: 522px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+
+.offer__btn {
+  position: absolute;
+  left: 0;
+  bottom: -58px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 50px;
+  background: #1b242d;
+  border: 1px solid #000000;
+  -webkit-box-shadow: inset 0px 2px 1px rgba(153, 153, 153, 0.25);
+          box-shadow: inset 0px 2px 1px rgba(153, 153, 153, 0.25);
+}
+
+.offer__call > .offer__call-link {
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .offer {
+    margin: 70px 0px 0px 0px;
+    padding: 3vw 0px 0px 0px;
+  }
+  .offer__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 250px;
+    margin: 0px 0px 10px 0px;
+  }
+  .offer__title {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 380px;
+    margin: 0px 0px 10px 0px;
+  }
+  .offer__descr {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 355px;
+  }
+  .offer__btn {
+    bottom: -108px;
+  }
+  .offer__demo-link {
+    font-size: 16px;
+  }
+  .offer__call > .offer__call-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: url("/images/sec1/banner.jpg") 0 0/cover no-repeat;
+    padding: 2vw 0px 0px 0px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 250px;
+    margin: 0px 0px 10px 0px;
+  }
+  .offer__title {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 300px;
+    margin: 0px 0px 10px 0px;
+  }
+  .offer__descr {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 300px;
+  }
+  .offer__btn {
+    padding: 20px 10px;
+    bottom: -80px;
+  }
+  .offer__demo-link {
+    font-size: 13px;
+  }
+  .offer__call > .offer__call-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer {
+    background: url(/images/sec1/banner.jpg) 48% 10%/cover no-repeat;
+    height: 227px;
+  }
+  .offer__subtitle {
+    display: none;
+  }
+  .offer__title {
+    max-width: 210px;
+  }
+  .offer__descr {
+    max-width: 195px;
+  }
+  .offer__btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: -130px;
+  }
+  .offer__call {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
 .lk-browser {
-  margin: 200px 0 0 0;
+  padding: 120px 0px 0px 0px;
 }
 
 .lk-browser__title {
@@ -552,10 +712,8 @@ details {
 }
 
 @media (max-width: 576px) {
-  .content__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+  .lk-browser {
+    padding: 150px 0px 0px 0px;
   }
   .lk-browser__title {
     font-size: 30px;
@@ -563,5 +721,10 @@ details {
   .lk-browser__subtitle {
     font-size: 18px;
     margin: 0 0 20px 0;
+  }
+  .content__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
