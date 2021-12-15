@@ -458,7 +458,7 @@ details {
 }
 
 .offer {
-  background: url("/images/sec1/banner.jpg") 0 0/contain no-repeat;
+  background: url("../images/sec1/banner.jpg") 0 0/contain no-repeat;
   height: 38vw;
   margin: 140px 0px 0px 0px;
   padding: 4vw 0px 0px 0px;
@@ -555,7 +555,7 @@ details {
 
 @media (max-width: 768px) {
   .offer {
-    background: url("/images/sec1/banner.jpg") 0 0/cover no-repeat;
+    background: url("../images/sec1/banner.jpg") 0 0/cover no-repeat;
     padding: 2vw 0px 0px 0px;
   }
   .offer__subtitle {
@@ -589,7 +589,7 @@ details {
 
 @media (max-width: 576px) {
   .offer {
-    background: url(/images/sec1/banner.jpg) 48% 10%/cover no-repeat;
+    background: url("../images/sec1/banner.jpg") 48% 10%/cover no-repeat;
     height: 227px;
   }
   .offer__subtitle {
@@ -654,27 +654,27 @@ details {
 }
 
 .content__item.item-1 {
-  background: url(/images/sec2/box_1.jpg) 50% 50%/cover no-repeat;
+  background: url("/images/sec2/box_1.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-2 {
-  background: url(/images/sec2/box_2.jpg) 50% 50%/cover no-repeat;
+  background: url("/images/sec2/box_2.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-3 {
-  background: url(/images/sec2/box_3.jpg) 50% 50%/cover no-repeat;
+  background: url("/images/sec2/box_3.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-4 {
-  background: url(/images/sec2/box_4.jpg) 50% 50%/cover no-repeat;
+  background: url("/images/sec2/box_4.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-5 {
-  background: url(/images/sec2/box_5.jpg) 50% 50%/cover no-repeat;
+  background: url("/images/sec2/box_5.jpg") 50% 50%/cover no-repeat;
 }
 
 .content__item.item-6 {
-  background: url(/images/sec2/box_6.jpg) 50% 50%/cover no-repeat;
+  background: url("/images/sec2/box_6.jpg") 50% 50%/cover no-repeat;
 }
 
 .item__img {
