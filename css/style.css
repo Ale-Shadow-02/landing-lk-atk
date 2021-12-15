@@ -728,3 +728,102 @@ details {
             flex: 0 1 100%;
   }
 }
+
+.footer {
+  background: #1b242d;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0px;
+}
+
+.footer__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #bdbdbd;
+}
+
+.footer__social {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #8d9196;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 10px 0px 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social__icon-img {
+  height: 20px;
+}
+
+.social__icon:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.social__icon:hover {
+  background: #c2c4c7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+  .footer__body {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin: 0px 0px 15px 0px;
+  }
+  .footer__social {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
