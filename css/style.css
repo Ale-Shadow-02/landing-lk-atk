@@ -216,8 +216,13 @@ body._lock {
   background-color: #fff;
   position: relative;
   z-index: 5;
-  width: 100px;
-  height: 32px;
+  width: 146px;
+  height: 40px;
+}
+
+.header__logo > img {
+  width: 146px;
+  height: 40px;
 }
 
 .menu__icon {
@@ -234,7 +239,7 @@ body._lock {
 
 .menu__list > li {
   position: relative;
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 0px 25px;
   font-size: 16px;
   color: #000000;
   cursor: pointer;
