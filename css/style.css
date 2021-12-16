@@ -92,6 +92,7 @@ h6 {
 body {
   font-family: Roboto, sans-serif;
   background: #ffffff;
+  color: #000000;
 }
 
 body._lock {
@@ -157,12 +158,6 @@ body._lock {
   color: #ffffff;
 }
 
-.section__num {
-  font-weight: 700;
-  font-size: 400px;
-  color: rgba(0, 0, 0, 0.1);
-}
-
 .section__title {
   font-weight: 700;
   font-size: 54px;
@@ -178,16 +173,30 @@ body._lock {
   color: #016b45;
 }
 
-.num-section__title {
+.section__num {
+  font-weight: 700;
+  font-size: 400px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.section__num-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #000000;
 }
 
-.num-section__title._subtitle {
-  text-transform: capitalize;
+.section__num-subtitle {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+}
+
+.section__num-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -1082,4 +1091,9 @@ details {
     font-size: 30px;
     line-height: 1;
   }
+}
+
+.browser-chapter-1 {
+  background: #f8f4ee;
+  height: 1000px;
 }
