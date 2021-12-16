@@ -1,5 +1,5 @@
 .lk-browser {
-   padding: 120px 0px 0px 0px;
+   padding: 120px 0px 50px 0px;
    &__title {
       text-align: center;
       line-height: 1;
@@ -75,7 +75,7 @@
 
 @media (max-width: 576px) {
    .lk-browser {
-      padding: 150px 0px 0px 0px;
+      padding: 150px 0px 50px 0px;
       &__title {
          font-size: 30px;
       }
