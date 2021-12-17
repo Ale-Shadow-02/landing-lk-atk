@@ -1107,3 +1107,135 @@ details {
     height: 1255vw;
   }
 }
+
+.profit__body-carrier {
+  background-color: #434442;
+  text-align: center;
+  padding: 100px 0px 100px 0px;
+}
+
+.profit__body-customer {
+  background-color: #2e2e2e;
+}
+
+.profit__title {
+  color: #fff;
+  margin: 0px 0px 40px 0px;
+}
+
+.profit__subtitle {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px 0px 50px 0px;
+}
+
+.profit__body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profit__body-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 10px 0px 0px;
+  margin: 0px 0px 50px 0px;
+}
+
+.profit__body-item > span {
+  text-align: left;
+}
+
+.profit__item-img {
+  width: 80px;
+  height: 80px;
+  margin: 0px 0px 30px 0px;
+}
+
+.profit__item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin: 0px 0px 20px 0px;
+}
+
+.profit__item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffffbf;
+}
+
+.profit__item-link {
+  text-align: left;
+  color: #ffffffbf;
+  text-decoration: underline;
+}
+
+.carrier__body-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(100% / 4);
+          flex: 0 1 calc(100% / 4);
+}
+
+@media (max-width: 992px) {
+  .carrier__body-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% / 3);
+            flex: 0 1 calc(100% / 3);
+  }
+}
+
+@media (max-width: 786px) {
+  .profit__body-carrier {
+    padding: 50px 0px 0px 0px;
+  }
+  .profit__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .carrier__body-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% / 2);
+            flex: 0 1 calc(100% / 2);
+  }
+}
+
+@media (max-width: 576px) {
+  .profit__body-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .profit__body-item > span {
+    text-align: center;
+  }
+  .profit__title {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .profit__subtitle {
+    font-size: 18px;
+  }
+  .profit__item-link {
+    text-align: center;
+  }
+  .carrier__body-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}

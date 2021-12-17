@@ -1,0 +1,133 @@
+.profit {
+   &__body {
+      &-carrier {
+         background-color: #434442;
+         text-align: center;
+         padding: 100px 0px 100px 0px;
+      }
+      &-customer {
+         background-color: #2e2e2e;
+      }
+   }
+   &__title {
+      color: #fff;
+      margin: 0px 0px 40px 0px;
+   }
+   &__subtitle {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0px 0px 50px 0px;
+   }
+   &__body {
+      &-content {
+         display: flex;
+         flex-wrap: wrap;
+      }
+      &-item {
+         display: flex;
+         flex-direction: column;
+         padding: 0px 10px 0px 0px;
+         margin: 0px 0px 50px 0px;
+         & > span {
+            text-align: left;
+         }
+      }
+   }
+   &__item {
+      &-img {
+         width: 80px;
+         height: 80px;
+         margin: 0px 0px 30px 0px;
+      }
+      &-title {
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+         color: #ffffff;
+         margin: 0px 0px 20px 0px;
+      }
+      &-text {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 16px;
+         color: #ffffffbf;
+      }
+      &-link {
+         text-align: left;
+         color: #ffffffbf;
+         text-decoration: underline;
+      }
+   }
+}
+.carrier {
+   &__body {
+      &-item {
+         flex: 0 1 calc(100% / 4);
+      }
+   }
+}
+@media (max-width: 992px) {
+   .carrier {
+      &__body {
+         &-item {
+            flex: 0 1 calc(100% / 3);
+         }
+      }
+   }
+}
+@media (max-width: 786px) {
+   .profit {
+      &__body {
+         &-carrier {
+            padding: 50px 0px 0px 0px;
+         }
+      }
+      &__title {
+         font-size: 40px;
+         line-height: 1.1;
+      }
+   }
+   .carrier {
+      &__body {
+         &-item {
+            flex: 0 1 calc(100% / 2);
+         }
+      }
+   }
+}
+@media (max-width: 576px) {
+   .profit {
+      &__body {
+         &-item {
+            align-items: center;
+            padding: 0;
+            & > span {
+               text-align: center;
+            }
+         }
+      }
+      &__title {
+         font-size: 24px;
+         line-height: 1.1;
+      }
+      &__subtitle {
+         font-size: 18px;
+      }
+      &__item {
+         &-link {
+            text-align: center;
+         }
+      }
+   }
+   .carrier {
+      &__body {
+         &-item {
+            flex: 0 1 100%;
+         }
+      }
+   }
+}
