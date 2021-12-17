@@ -1101,54 +1101,6 @@ details {
   height: 370vw;
 }
 
-.section__num-subtitle {
-  margin: -146px 0px 0px 0px;
-}
-
-.section__num-title {
-  line-height: 1.1;
-  margin: 0px 0px 1vw 0px;
-}
-
-.section__num-descr {
-  max-width: 660px;
-  margin: 0px 0px 3vw 0px;
-}
-
-.bid-item__list > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px 0px 25px 0px;
-}
-
-.bid-item__list-img {
-  width: 64px;
-  height: 64px;
-  margin: 0px 25px 0px 0px;
-}
-
-.bid-item__list-text {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 40px;
-}
-
-.bid-item__bg {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
-  height: 100%;
-}
-
-.bid-item__bg-tab {
-  width: 100%;
-}
-
 @media (max-width: 768px) {
   .browser-chapter-1 {
     background: #f8f4ee url(../images/sec5/chapter_big_bg_768.jpg) 0 0/cover no-repeat;

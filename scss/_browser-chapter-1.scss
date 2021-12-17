@@ -2,54 +2,54 @@
    background: #f8f4ee url(../images/sec5/Chapter_bid_bg.jpg) 0 0 / cover no-repeat;
    height: 370vw;
 }
-.container {
-}
-.browser-chapter-1__body {
-}
-.chapter__bid {
-}
-.chapter__bid-item {
-}
-.section__num {
-}
-.section__num-subtitle {
-   margin: -146px 0px 0px 0px;
-}
-.section__num-title {
-   line-height: 1.1;
-   margin: 0px 0px 1vw 0px;
-}
-.section__num-descr {
-   max-width: 660px;
-   margin: 0px 0px 3vw 0px;
-}
-.bid-item {
-   &__list {
-      & > li {
-         display: flex;
-         align-items: center;
-         margin: 0px 0px 25px 0px;
-      }
-      &-img {
-         width: 64px;
-         height: 64px;
-         margin: 0px 25px 0px 0px;
-      }
-   }
-   &__list-text {
-      display: inline-block;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 40px;
-   }
-   &__bg {
-      flex: 0 1 40%;
-      height: 100%;
-      &-tab {
-         width: 100%;
-      }
-   }
-}
+// .container {
+// }
+// .browser-chapter-1__body {
+// }
+// .chapter__bid {
+// }
+// .chapter__bid-item {
+// }
+// .section__num {
+// }
+// .section__num-subtitle {
+//    margin: -146px 0px 0px 0px;
+// }
+// .section__num-title {
+//    line-height: 1.1;
+//    margin: 0px 0px 1vw 0px;
+// }
+// .section__num-descr {
+//    max-width: 660px;
+//    margin: 0px 0px 3vw 0px;
+// }
+// .bid-item {
+//    &__list {
+//       & > li {
+//          display: flex;
+//          align-items: center;
+//          margin: 0px 0px 25px 0px;
+//       }
+//       &-img {
+//          width: 64px;
+//          height: 64px;
+//          margin: 0px 25px 0px 0px;
+//       }
+//    }
+//    &__list-text {
+//       display: inline-block;
+//       font-weight: 500;
+//       font-size: 24px;
+//       line-height: 40px;
+//    }
+//    &__bg {
+//       flex: 0 1 40%;
+//       height: 100%;
+//       &-tab {
+//          width: 100%;
+//       }
+//    }
+// }
 @media (max-width: 768px) {
    .browser-chapter-1 {
       background: #f8f4ee url(../images/sec5/chapter_big_bg_768.jpg) 0 0 / cover no-repeat;
