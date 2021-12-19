@@ -1,0 +1,10 @@
+.browser-chapter-2 {
+   background: url(../images/wb_bg/WB_chapter_2.jpg) 0 0 / cover no-repeat;
+   height: 100vw;
+}
+@media (max-width: 768px) {
+   .browser-chapter-2 {
+      background: url(../images/wb_768/WB_chapter_12.jpg) 0 0 / cover no-repeat;
+      height: 312vw;
+   }
+}

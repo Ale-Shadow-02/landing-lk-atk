@@ -3,10 +3,12 @@
       &-carrier {
          background-color: #434442;
          text-align: center;
-         padding: 100px 0px 100px 0px;
+         padding: 100px 0px 50px 0px;
       }
       &-customer {
          background-color: #2e2e2e;
+         text-align: center;
+         padding: 100px 0px 100px 0px;
       }
    }
    &__title {
@@ -62,6 +64,30 @@
          text-decoration: underline;
       }
    }
+   &__btn {
+      margin: 0px 0px 60px 0px;
+   }
+   &__download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-img {
+         width: 64px;
+         height: 64px;
+         margin: 0px 20px 0px 0px;
+      }
+      &-link {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 19px;
+         color: #ffffff;
+         max-width: 350px;
+         text-align: left;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
 }
 .carrier {
    &__body {
@@ -70,8 +96,23 @@
       }
    }
 }
+.customer {
+   &__body {
+      &-item {
+         flex: 0 1 calc(100% / 5);
+         margin: 0px 0px 60px 0px;
+      }
+   }
+}
 @media (max-width: 992px) {
    .carrier {
+      &__body {
+         &-item {
+            flex: 0 1 calc(100% / 3);
+         }
+      }
+   }
+   .customer {
       &__body {
          &-item {
             flex: 0 1 calc(100% / 3);
@@ -92,6 +133,13 @@
       }
    }
    .carrier {
+      &__body {
+         &-item {
+            flex: 0 1 calc(100% / 2);
+         }
+      }
+   }
+   .customer {
       &__body {
          &-item {
             flex: 0 1 calc(100% / 2);
@@ -122,8 +170,25 @@
             text-align: center;
          }
       }
+      &__download {
+         &-link {
+            font-size: 12px;
+            line-height: 14px;
+         }
+      }
+      &__link {
+         font-size: 14px;
+         line-height: 24px;
+      }
    }
    .carrier {
+      &__body {
+         &-item {
+            flex: 0 1 100%;
+         }
+      }
+   }
+   .customer {
       &__body {
          &-item {
             flex: 0 1 100%;
