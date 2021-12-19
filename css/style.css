@@ -1122,7 +1122,7 @@ details {
 
 .browser-chapter-3 {
   background: url(../images/wb_bg/WB_chapter_3.png) 0 0/cover no-repeat;
-  height: 64.67vw;
+  height: 65.5vw;
   margin: -13.5vw 0px 0px 0px;
 }
 
@@ -1142,7 +1142,33 @@ details {
 @media (max-width: 768px) {
   .browser-chapter-4 {
     background: url(../images/wb_768/WB_chapter_14.jpg) 0 0/cover no-repeat;
-    height: 222vw;
+    height: 115vw;
+  }
+}
+
+.browser-chapter-5 {
+  background: url(../images/wb_bg/WB_chapter_5.jpg) 0 0/cover no-repeat;
+  height: 49.7vw;
+}
+
+@media (max-width: 768px) {
+  .browser-chapter-5 {
+    background: url(../images/wb_768/WB_chapter_15.jpg) 0 0/cover no-repeat;
+    height: 135vw;
+  }
+}
+
+.browser-chapter-6 {
+  background: url(../images/wb_bg/WB_chapter_6.png) 0 0/cover no-repeat;
+  height: 52vw;
+  margin: -10vw 0px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .browser-chapter-6 {
+    background: url(../images/wb_768/WB_chapter_16.jpg) 0 0/cover no-repeat;
+    height: 138vw;
+    margin: 0;
   }
 }
 
