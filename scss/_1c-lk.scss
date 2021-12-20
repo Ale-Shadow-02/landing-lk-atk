@@ -89,7 +89,7 @@
 .swiper-slide {
    &__image {
       &-img {
-         width: 100%;
+         max-width: 100%;
       }
    }
 }
@@ -110,6 +110,7 @@
       &__func {
          &-item {
             flex: 0 1 50%;
+            margin: 0px 0px 20px 0px;
          }
       }
    }
@@ -125,6 +126,10 @@
    }
    .slider_1 .swiper-pagination-horizontal {
       bottom: -10px;
+      height: 22px;
+   }
+   .slider_1 {
+      height: 60vw;
    }
 }
 @media (max-width: 576px) {
