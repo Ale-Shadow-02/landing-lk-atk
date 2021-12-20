@@ -31,10 +31,16 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
    };
 
+   // Slider-1
+   const swiper = new Swiper('.slider_1', {
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+      },
+   });
    
    
 });
-
 
 
 
