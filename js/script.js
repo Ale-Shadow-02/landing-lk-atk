@@ -32,13 +32,31 @@ document.addEventListener("DOMContentLoaded", function() {
    };
 
    // Slider-1
-   const swiper = new Swiper('.slider_1', {
+   let slider_1 = new Swiper('.slider_1', {
       pagination: {
          el: '.swiper-pagination',
          clickable: true,
       },
    });
-   
+   //Slider-2
+   let slider_2 = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 9,
+   });
+   let slider_22 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+         nextEl: ".my-button-next",
+         prevEl: ".my-button-prev",
+      },
+      pagination: {
+         el: '.my__pagin',
+         clickable: true,
+      },
+      thumbs: {
+         swiper: slider_2,
+      },
+   });
    
 });
 
