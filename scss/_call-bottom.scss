@@ -1,0 +1,27 @@
+.call-bottom {
+   background: url(../images/form/form_bottom_bg.jpg) 0 0 / cover no-repeat;
+   position: relative;
+   &__button {
+      position: absolute;
+      top: -8vw;
+      text-align: center;
+      width: 100%;
+   }
+}
+@media (max-width: 992px) {
+   .call-bottom {
+      &__btn {
+         font-size: 18px;
+      }
+   }
+}
+@media (max-width: 768px) {
+   .call-bottom {
+      &__button {
+         top: -19vw;
+      }
+      &__btn {
+         font-size: 14px;
+      }
+   }
+}

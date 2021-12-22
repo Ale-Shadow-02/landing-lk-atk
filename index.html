@@ -22,7 +22,7 @@
 
 <body>
    <div class="wrapper">
-      <header class="header" id="header">
+      <header class="header lock-padding" id="header">
          <div class="container header__container">
             <a href="/index.html" class="header__logo">
                <img src="images/logo.svg" alt="LOGO">
@@ -71,7 +71,7 @@
                </nav>
             </div>
             <div class="menu__body--btn">
-               <a href="#" class="btn modal">Заказать обратный звонок</a>
+               <a href="#popup" class="btn modal popup-link">Заказать обратный звонок</a>
             </div>
          </div>
          <div class="tabs__body">
@@ -110,7 +110,7 @@
                заказчик и заходите в личный кабинет</span>
             <div class="offer__btn">
                <div class="offer__call">
-                  <a href="#" class="btn modal offer__call-link">Заказать обратный звонок</a>
+                  <a href="#popup" class="btn modal offer__call-link popup-link">Заказать обратный звонок</a>
                </div>
                <div class="offer__demo">
                   <a href="#" class="btn offer__demo-link">Попробовать демоверсию</a>
@@ -361,7 +361,12 @@
                   </div>
                   <!-- /Slides -->
                </div>
-               <div class="swiper-pagination"></div>
+               <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="my__navigation slider_1-my__navigation">
+               <div class="my1-button-prev slider_1-my1-button-prev">&#8249;</div>
+               <div class="my1-button-next slider_1-my1-button-next">&#8250;</div>
+               <div class="my1__pagin"></div>
             </div>
             <!-- /Slider 1 -->
             <div class="lk-1c__info">
@@ -408,9 +413,6 @@
          </div>
       </section>
       <section class="lk1c-chapter-1" id="lk1c-chapter-1"></section>
-
-
-
       <div class="lk1c__slider-2" id="lk1c__slider-2">
          <div class="container">
             <div class="swiper mySwiper">
@@ -554,14 +556,7 @@
             <div class="my__pagin"></div>
          </div>
       </div>
-
-
-
       <div class="lk1c-chapter-2" id="lk1c-chapter-2"></div>
-
-
-
-
       <div class="lk1c__slider-3" id="lk1c__slider-3">
          <div class="container">
             <div class="swiper mySwiper3">
@@ -691,12 +686,36 @@
             <div class="my3__pagin"></div>
          </div>
       </div>
-
-
       <div class="lk1c-chapter-3" id="lk1c-chapter-3"></div>
       <div class="lk1c-chapter-4" id="lk1c-chapter-4"></div>
       <div class="lk1c-chapter-5" id="lk1c-chapter-5"></div>
       <div class="lk1c-chapter-6" id="lk1c-chapter-6"></div>
+      <section class="call call-bottom">
+         <div class="container">
+            <div class="call__body">
+               <span class="form__title">Остались вопросы — свяжитесь с менеджером</span>
+               <span class="form__subtitle">* обозначены поля, обязательные для заполнения</span>
+               <form action="#" class="call__form" id="call__form">
+                  <div class="form__item">
+                     <label for="formName" class="form__label">Имя</label>
+                     <input type="text" id="formName" name="user__name" class="form__input">
+                  </div>
+                  <div class="form__item">
+                     <label for="formPhone" class="form__label">Телефон *</label>
+                     <input type="text" id="formPhone" name="user__phone" class="form__input" required>
+                  </div>
+                  <div class="form__item">
+                     <label for="formEmail" class="form__label">E-mail *</label>
+                     <input type="text" id="formEmail" name="user__mail" class="form__input" required>
+                  </div>
+                  <button type="submit" class="form__button btn black">Отправить</button>
+               </form>
+            </div>
+         </div>
+         <div class="call-bottom__button">
+            <a href="#" class="btn call-bottom__btn">Попробовать Демо-доступ 1С АТК</a>
+         </div>
+      </section>
       <footer class="footer" id="footer">
          <div class="container">
             <div class="footer__body">
@@ -725,6 +744,33 @@
             </div>
          </div>
       </footer>
+      <div class="popup" id="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="#header" class="popup__close close-popup">X</a>
+               <form action="#" class="form__popup" id="form-popup">
+                  <p class="form__popup-title">Заказать обратный звонок</p>
+                  <span class="form__popup-subtitle">*обозначены поля, обязательные для заполнения</span>
+                  <div class="popup__item">
+                     <label for="popupName" class="popup__label">Имя *</label>
+                     <input type="text" class="popup__input" id="popupName">
+                  </div>
+                  <div class="popup__item">
+                     <label for="popupPhone" class="popup__label">Телефон *</label>
+                     <input type="text" class="popup__input" id="popupPhone">
+                  </div>
+                  <div class="popup__item">
+                     <input type="checkbox">
+                     <span class="politic">Нажимая кнопку Вызвать курьера вы соглашаетесь с <a href="#"
+                           class="politic__link">политикой обработки персональных данных</a></span>
+                  </div>
+                  <div class="popup__item">
+                     <a href="#" class="btn">Отправить заявку</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
    </div>
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <script src="js/script.js"></script>

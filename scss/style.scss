@@ -6,7 +6,7 @@ body {
    color: #000000;
 }
 
-body._lock {
+body.lock {
    overflow: hidden;
 }
 
@@ -107,7 +107,6 @@ body._lock {
 @import "header";
 @import "offer";
 @import "lk-browser";
-@import "footer";
 @import "control";
 @import "work";
 @import "browser-chapter-1";
@@ -127,3 +126,6 @@ body._lock {
 @import "lk1c-chapter-4";
 @import "lk1c-chapter-5";
 @import "lk1c-chapter-6";
+@import "call-bottom";
+@import "footer";
+@import "popup";

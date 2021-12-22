@@ -105,7 +105,9 @@
 .my-button-next,
 .my-button-prev,
 .my3-button-next,
-.my3-button-prev {
+.my3-button-prev,
+.my1-button-next,
+.my1-button-prev {
    display: inline-block;
    font-size: 55px;
    font-weight: 500;
@@ -113,24 +115,29 @@
    position: absolute;
 }
 .my-button-next,
-.my3-button-next {
+.my3-button-next,
+.my1-button-next {
    top: -25px;
    right: 0;
 }
 .my-button-prev,
-.my3-button-prev {
+.my3-button-prev,
+.my1-button-prev {
    top: -25px;
    left: 0;
 }
 .my-button-prev.swiper-button-disabled,
 .my-button-next.swiper-button-disabled,
 .my3-button-prev.swiper-button-disabled,
-.my3-button-next.swiper-button-disabled {
+.my3-button-next.swiper-button-disabled,
+.my1-button-prev.swiper-button-disabled,
+.my1-button-next.swiper-button-disabled {
    opacity: 0.5;
 }
 
 .my__pagin .swiper-pagination-bullet,
-.my3__pagin .swiper-pagination-bullet {
+.my3__pagin .swiper-pagination-bullet,
+.my1__pagin .swiper-pagination-bullet {
    width: 12px;
    height: 12px;
    line-height: 20px;
@@ -141,7 +148,8 @@
 }
 
 .my__pagin .swiper-pagination-bullet-active,
-.my3__pagin .swiper-pagination-bullet-active {
+.my3__pagin .swiper-pagination-bullet-active,
+.my1__pagin .swiper-pagination-bullet-active {
    background-color: #016b45;
 }
 
