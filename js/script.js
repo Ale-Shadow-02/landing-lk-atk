@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
       });
    };
 
-   
+   // Tabs in headers
    let tabBtn = document.querySelectorAll('.tab__btn');
    let tabsContent = document.querySelectorAll('.tabs__content');
-   
 
    if (menuBody) {
       menuBody.addEventListener('click', (e) => {
@@ -56,6 +55,29 @@ document.addEventListener("DOMContentLoaded", function() {
       thumbs: {
          swiper: slider_2,
       },
+      autoHeight: true,
+      grabCursor: true,
+   });
+   //Slider-3 
+   let slider_3 = new Swiper(".mySwiper3", {
+      spaceBetween: 10,
+      slidesPerView: 8,
+   });
+   let slider_33 = new Swiper(".mySwiper33", {
+      spaceBetween: 10,
+      navigation: {
+         nextEl: ".my3-button-next",
+         prevEl: ".my3-button-prev",
+      },
+      pagination: {
+         el: '.my3__pagin',
+         clickable: true,
+      },
+      thumbs: {
+         swiper: slider_3,
+      },
+      autoHeight: true,
+      grabCursor: true,
    });
    
 });

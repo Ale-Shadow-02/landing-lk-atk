@@ -1,0 +1,10 @@
+.lk1c-chapter-4 {
+   background: url(../images/1C_bg/1cWB_chapter_4.jpg) 0 0 / cover no-repeat;
+   height: 40vw;
+}
+@media (max-width: 768px) {
+   .lk1c-chapter-4 {
+      background: url(../images/1C_bg_768/1cWB_chapter_14.jpg) 0 0 / cover no-repeat;
+      height: 146vw;
+   }
+}
