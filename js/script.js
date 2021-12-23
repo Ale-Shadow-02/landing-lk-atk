@@ -9,7 +9,25 @@ document.addEventListener("DOMContentLoaded", function() {
          menuBody.classList.toggle('_active');
       });
    };
+   // Прокрутка при клике
+   const anchors = document.querySelectorAll('a.menu__link')
 
+   for (let anchor of anchors) {
+   anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      if (iconMenu.classList.contains('_active')) {
+         document.body.classList.remove('_lock');
+         iconMenu.classList.remove('_active');
+         menuBody.classList.remove('_active');
+      }
+      const blockID = anchor.getAttribute('href')
+      
+      document.querySelector(blockID).scrollIntoView({
+         behavior: 'smooth',
+         block: 'start'
+      })
+   })
+   }
    // Tabs in headers
    let tabBtn = document.querySelectorAll('.tab__btn');
    let tabsContent = document.querySelectorAll('.tabs__content');
