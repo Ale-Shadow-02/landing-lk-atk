@@ -43,8 +43,104 @@
 .popup__close {
    position: absolute;
    right: 10px;
-   top: 10px;
-   font-size: 20px;
+   top: 0;
+   font-size: 40px;
    color: #000;
    text-decoration: none;
+}
+.form {
+   &__popup {
+      &-title {
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 28px;
+         text-align: center;
+         margin: 0px 0px 25px 0px;
+      }
+      &-subtitle {
+         display: inline-block;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 16px;
+         color: #00000080;
+         margin: 0px 0px 25px 0px;
+      }
+   }
+}
+.popup {
+   &__item {
+      margin: 0px 0px 20px 0px;
+      &:last-child {
+         text-align: center;
+         margin: 0px 0px 0px 0px;
+      }
+   }
+   &__label {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #00000080;
+      margin: 0px 0px 10px 0px;
+   }
+   &__input {
+      background: #ffffff;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      width: 100%;
+      padding: 10px;
+   }
+}
+.checkbox {
+   &__input {
+      width: 20px;
+      height: 20px;
+      margin: 0px 10px 0px 0px;
+   }
+   &__label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #75757580;
+      vertical-align: 7px;
+      &-link {
+         color: #75757580;
+         text-decoration: underline;
+         margin: 0px 0px 0px 35px;
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+}
+@media (max-width: 576px) {
+   .popup__content {
+      padding: 40px 10px;
+   }
+   .form {
+      &__popup {
+         &-title {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0px 0px 15px 0px;
+         }
+         &-subtitle {
+            margin: 0px 0px 15px 0px;
+         }
+      }
+   }
+   .checkbox {
+      &__label {
+         &-link {
+            margin: 0;
+         }
+      }
+   }
+   .popup {
+      &__form {
+         &-btn {
+            font-size: 18px;
+         }
+      }
+   }
 }

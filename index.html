@@ -747,7 +747,7 @@
       <div class="popup" id="popup">
          <div class="popup__body">
             <div class="popup__content">
-               <a href="#header" class="popup__close close-popup">X</a>
+               <a href="#header" class="popup__close close-popup">&#215;</a>
                <form action="#" class="form__popup" id="form-popup">
                   <p class="form__popup-title">Заказать обратный звонок</p>
                   <span class="form__popup-subtitle">*обозначены поля, обязательные для заполнения</span>
@@ -760,12 +760,14 @@
                      <input type="text" class="popup__input" id="popupPhone">
                   </div>
                   <div class="popup__item">
-                     <input type="checkbox">
-                     <span class="politic">Нажимая кнопку Вызвать курьера вы соглашаетесь с <a href="#"
-                           class="politic__link">политикой обработки персональных данных</a></span>
+                     <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input" checked>
+                     <label for="formAgreement" class="checkbox__label"><span>Нажимая кнопку Вызвать курьера вы
+                           соглашаетесь с <a href="https://alvetk.ru/privacy-policy/" class="checkbox__label-link"
+                              target="_blank">политикой обработки персональных
+                              данных</a></span></label>
                   </div>
                   <div class="popup__item">
-                     <a href="#" class="btn">Отправить заявку</a>
+                     <a href="#" class="btn popup__form-btn">Отправить заявку</a>
                   </div>
                </form>
             </div>
