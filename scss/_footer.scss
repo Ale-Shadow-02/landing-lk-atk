@@ -17,7 +17,7 @@
    }
 
    &__social {
-      flex: 0 1 30%;
+      flex: 0 1 19%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -49,15 +49,18 @@
 @media (max-width: 576px) {
    .footer {
       &__body {
-         justify-content: flex-start;
+         justify-content: space-between;
       }
       &__text {
          flex: 0 1 100%;
          margin: 0px 0px 15px 0px;
       }
       &__social {
-         flex: 0 1 100%;
+         flex: 0 1 50%;
          justify-content: flex-start;
+         &:last-child {
+            justify-content: flex-end;
+         }
       }
    }
 }

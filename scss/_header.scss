@@ -59,7 +59,7 @@
 .tabs__triangle--1 {
    position: absolute;
    top: -10px;
-   left: 24%;
+   left: 23%;
    width: 0;
    height: 0;
    border-left: 30px solid transparent;
@@ -85,6 +85,23 @@
 details {
    display: none;
 }
+
+.call {
+   &__menu {
+      &-mobile {
+         display: none;
+      }
+      &-phone {
+         width: 25px;
+         opacity: 0.9;
+         margin: 0px 20px 0px 0px;
+      }
+      &-mail {
+         width: 30px;
+         opacity: 0.9;
+      }
+   }
+}
 /* ----------------------- */
 @media (min-width: 992px) {
    .menu__list {
@@ -96,6 +113,22 @@ details {
    }
 }
 @media (max-width: 992px) {
+   .call {
+      &__menu {
+         &-mobile {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            padding: 0px 20px 0px 0px;
+         }
+         &-desktop {
+            display: none;
+         }
+      }
+   }
    .tabs__body,
    .menu__body--btn,
    .menu__list.tabs {
