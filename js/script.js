@@ -195,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
          unlock = true;
       }, timeout);
    }
+   
 });
 
 
