@@ -195,7 +195,34 @@ document.addEventListener("DOMContentLoaded", function() {
          unlock = true;
       }, timeout);
    }
-   
+   //Scroll To Top
+   let basicScrollTop = function () {  
+      // The button
+   let btnTop = document.querySelector('#go-top');
+      // Reveal the button
+      let btnReveal = function () { 
+         if (window.scrollY >= 300) {
+            btnTop.classList.add('is-visible');
+         } else {
+            btnTop.classList.remove('is-visible');
+         }    
+      }  
+      // Smooth scroll top
+      let TopscrollTo = function () {
+         if(window.scrollY!=0) {
+            setTimeout(function() {
+            window.scrollTo(0,window.scrollY-140);
+            TopscrollTo();
+         }, 5);
+      }
+   }
+      // Listeners
+      window.addEventListener('scroll', btnReveal);
+      btnTop.addEventListener('click', TopscrollTo);  
+   };
+   basicScrollTop();
+
+
 });
 
 

@@ -103,6 +103,42 @@ body.lock {
    line-height: 24px;
    color: rgba(0, 0, 0, 0.5);
 }
+.w-form-done,
+.w-form-fail {
+   display: none;
+}
+.w-form-done {
+   padding: 15px 0;
+   text-align: center;
+   background: #a2d8ae;
+   margin: 10px 0 0 0;
+   color: #0c6621;
+}
+.w-form-fail {
+   padding: 15px 0;
+   text-align: center;
+   background: #daa898;
+   margin: 10px 0 0 0;
+   color: #7a1a09;
+}
+
+//Button Scroll-Top
+.go__top {
+   position: fixed;
+   z-index: 999;
+   right: 20px;
+   bottom: 10%;
+   border-radius: 5px;
+   opacity: 0;
+   transition: opacity 0.4s linear;
+   cursor: pointer;
+}
+.go__top > img {
+   width: 45px;
+}
+#go-top.is-visible {
+   opacity: 1;
+}
 
 @import "header";
 @import "offer";
