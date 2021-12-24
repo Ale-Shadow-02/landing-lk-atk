@@ -2003,6 +2003,10 @@ details {
   color: #bdbdbd;
 }
 
+.footer__text-copyright {
+  display: inline-block;
+}
+
 .footer__social {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 19%;
@@ -2016,6 +2020,29 @@ details {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0px 0px 0px;
+}
+
+.footer__developer-logo {
+  width: 25px;
+  margin: 0 5px;
+}
+
+.footer__developer .footer__text-copyright-link {
+  color: #bdbdbd;
+}
+
+.footer__developer .footer__text-copyright-link:hover {
+  text-decoration: underline;
 }
 
 .social__icon {
